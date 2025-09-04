@@ -1,26 +1,15 @@
 ﻿#include <iostream>
 using namespace std;
 
-void function1(int x)
-{
-	x++;
-}
-void function2(int &x)
-{
-	x++;
-}
-
+//fedeo 34
 int main()
 {
 	int a = 10;
+	int &x = a;
+	cout << &a << endl;
+	cout << &x << endl;
 
-	function1(a);
-	cout << a<<endl;
-
-	function2(a);
-	cout << a<<endl;
-
+	x = 20;
 	cout << a << endl;
-	cout << "Hexadecimal ( Address Or Refrence) " << &a << endl;
+	cout << x << endl;
 }
-
