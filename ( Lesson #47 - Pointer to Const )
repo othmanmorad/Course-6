@@ -1,0 +1,33 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+//fedeo47
+ int main()
+{
+    vector<int>vNumber = { 10,20,30,40,50 };
+
+    cout << "Initial Vector : ";
+    for ( const int &Number : vNumber)
+    {
+        cout << Number<<" ";
+    }
+
+    cout << "\n\nUpdated Vector : ";
+    for ( int& i : vNumber)
+    {    
+        i = 20;
+        cout << i << " ";
+   }
+
+    vNumber[0] = 40;
+    vNumber.at(2) = 80;
+    vNumber.at(4) = 90;
+
+    cout << "\n\nUpdated Vector : ";
+    for (const int& i : vNumber)
+    {
+        cout << i << " ";
+    }
+}
