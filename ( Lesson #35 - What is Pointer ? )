@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+
+//fedeo35 pointers
+
+int main()
+{
+	int a = 10;
+	int b = 20;
+	cout << "a Value = " << a << endl;
+	cout << "a Address = " << &a << endl;
+
+	int* p;
+	p = &a;
+
+	p = &b;
+
+	cout << "Pointer value = " << p << endl;
+	cout << endl;
+}
